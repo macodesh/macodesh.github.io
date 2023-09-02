@@ -5,7 +5,12 @@ import * as THREE from 'three'
 import CanvasLoader from '../CanvasLoader'
 
 function Stars({ count }: { count: number }): React.JSX.Element {
-  const points = useRef(null)
+  const points = useRef({
+    rotation: {
+      x: 0,
+      y: 0
+    }
+  } as THREE.Points)
 
   // Função utilitária para "randomizar" as estrelas
   const particlesPosition = useMemo(() => {
