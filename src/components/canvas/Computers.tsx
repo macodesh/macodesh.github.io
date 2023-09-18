@@ -59,7 +59,7 @@ export default function ComputersCanvas(): React.JSX.Element {
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
-      title="Meu laboratório secreto, no porão de casa"
+    // title="Meu laboratório secreto, no porão de casa"
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls

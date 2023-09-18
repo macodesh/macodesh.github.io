@@ -81,12 +81,9 @@ function Projects(): React.JSX.Element {
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui incidunt
-          ullam molestiae voluptate, quaerat repudiandae libero adipisci modi
-          exercitationem autem iste provident sed placeat debitis sapiente
-          mollitia at, temporibus officiis. Voluptatum doloremque magni quaerat
-          totam laudantium et quae porro veniam tempore eligendi dolorum ipsa ad
-          adipisci corporis, voluptate quidem nesciunt?
+          Explore meu mundo digital. Cada projeto é uma história única, onde ideias se tornam realidade. Da web dinâmica às soluções técnicas avançadas, aqui você encontrará meu trabalho em desenvolvimento de software, apis, sites e aplicativos. Cada projeto é uma história de sucesso em constante evolução.
+          <br />
+          Sinta-se à vontade para explorar e entrar em contato para colaborarmos em algo excepcional.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7 justify-center">
