@@ -22,11 +22,9 @@ export default function Navbar(): React.JSX.Element {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? 'bg-primary' : 'bg-transparent'
-      }`}
+      className={`${styles.paddingX
+        } w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? 'bg-primary' : 'bg-transparent'
+        }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -41,27 +39,26 @@ export default function Navbar(): React.JSX.Element {
           <img
             src={logo}
             alt="logo"
-            className="w-9 h-9 object-contain"
+            className="w-8 h-8 object-contain"
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Marlon Couto &nbsp;
-            <span className="sm:block hidden">| Software Developer</span>
+            <span className="lg:block hidden">| Software Developer</span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden lg:flex flex-row gap-10">
           {navLinks.map(({ id, title }) => (
             <li
               key={id}
-              className={`${
-                active === title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === title ? 'text-white' : 'text-secondary'
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(title)}
             >
               <a href={`#${id}`}>{title}</a>
             </li>
           ))}
         </ul>
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="lg:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -69,17 +66,15 @@ export default function Navbar(): React.JSX.Element {
             onClick={() => setToggle(!toggle)}
           />
           <div
-            className={`${
-              !toggle ? 'hidden' : 'flex'
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            className={`${!toggle ? 'hidden' : 'flex'
+              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map(({ id, title }) => (
                 <li
                   key={id}
-                  className={`${
-                    active === title ? 'text-white' : 'text-secondary'
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                  className={`${active === title ? 'text-white' : 'text-secondary'
+                    } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setActive(title)
                     setToggle(!toggle)
