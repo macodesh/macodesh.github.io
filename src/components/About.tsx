@@ -49,11 +49,9 @@ function About(): React.JSX.Element {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn('', '', 0.1, 1)}
       >
-        Sou um Desenvolvedor apaixonado por tecnologia, especializado em JavaScript e C#. Com uma sólida formação acadêmica e uma extensa experiência em projetos, estou pronto para enfrentar desafios e criar soluções inovadoras.
+        Sou um Desenvolvedor apaixonado por tecnologia, especializado em JavaScript e C#. Com uma sólida formação e uma extensa experiência em projetos, estou pronto para enfrentar desafios e criar soluções inovadoras.
         <br />
-        <br />
-        Com um foco especial em tecnologias como React, JavaScript, TypeScript, C#, .NET, Node.js e Bootstrap, tenho um histórico comprovado na criação de aplicações de alto desempenho e interfaces de usuário envolventes. Meu portfólio abriga uma variedade de projetos bem-sucedidos, todos construídos com expertise nessas tecnologias.
-        <br />
+        Com um foco especial em tecnologias como React, JavaScript, TypeScript, C#, .NET, Node.js e Bootstrap, tenho experiência na criação de aplicações de alto desempenho e interfaces de usuário envolventes. Meu portfólio abriga uma variedade de projetos bem-sucedidos, todos construídos com expertise nessas tecnologias.
         <br />
         Estou comprometido em aplicar meu conhecimento e habilidades para criar soluções de software excepcionais e estou sempre em busca de oportunidades emocionantes para expandir meu horizonte na área de desenvolvimento.
       </motion.p>
